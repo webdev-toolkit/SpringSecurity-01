@@ -8,6 +8,6 @@ public class CartController {
 
     @GetMapping
     public String application(){
-        return "Welcome to your own e-acrt ..!!!";
+        return "Welcome to your own e-cart ..!!!";
     }
 }
