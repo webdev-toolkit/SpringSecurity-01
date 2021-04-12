@@ -40,15 +40,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public StrictHttpFirewall httpFirewall(){
         StrictHttpFirewall httpFirewall = new StrictHttpFirewall();
-        httpFirewall.setAllowedHeaderNames((headerName) -> {
-            return true;
-        });
-
-        httpFirewall.setAllowedHeaderValues((headerValue) -> {
-            return headerValue.contains("\\r");
-        });
-
-
         return httpFirewall;
     }
 }
